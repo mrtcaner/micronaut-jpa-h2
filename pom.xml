@@ -196,7 +196,7 @@
                 </executions>
                 <configuration>
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
-                    <repository>mcaner/${project.artifactId}</repository>
+                    <repository>${project.artifactId}</repository>
                 </configuration>
             </plugin>
         </plugins>
