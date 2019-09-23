@@ -1,0 +1,79 @@
+{
+	"info": {
+		"name": "micronaut-jpa-h2",
+		"_postman_id": "5c92ef19-5fe8-3502-5f76-3bb905cdced4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveOrUpdateVehicleListing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n {\r\n \"code\": \"a\",\r\n \"make\": \"asd\",\r\n \"model\": \"as\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990\r\n },{\r\n \"code\": \"b\",\r\n \"make\": \"renault\",\r\n \"model\": \"megane\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990\r\n },{\r\n \"code\": \"c\",\r\n \"make\": \"renault\",\r\n \"model\": \"talisman\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990\r\n },{\r\n \"code\": \"d\",\r\n \"make\": \"renault\",\r\n \"model\": \"12\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990\r\n },{\r\n \"code\": \"e\",\r\n \"make\": \"renault\",\r\n \"model\": \"5 GTI\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990\r\n },{\r\n \"code\": \"f\",\r\n \"make\": \"renault\",\r\n \"model\": \"Fluence\",\r\n \"kW\": 132,\r\n \"year\": 2014,\r\n \"color\": \"red\",\r\n \"price\": 13990.99\r\n }\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/vehicle_listings/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vehicle_listings",
+						"123"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "saveOrUpdateCSV",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/upload_csv/124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"upload_csv",
+						"124"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
